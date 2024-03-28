@@ -29,7 +29,7 @@ app.use('/api/orders', orderRoutes)
 app.use('/api/upload', uploadRoutes)
 
 app.get('/api/config/paypal', (req, res) =>
-  res.send(process.env.PAYPAL_CLIENT_ID)
+  res.send(process.env.PAYPAL_CLIENT_ID||"Aam_WbIkFpKHPYUesScw1HshrmzOWO0LN9eO2lDgxS4W7GPtNLfLY5OJoXkKIN5vWkv555YAQw_XfB5z")
 )
 
 const __dirname = path.resolve()
